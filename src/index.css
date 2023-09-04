@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+main {
+  padding: 150px 0 150px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link-left {
+  text-align: center;
+  font-weight: 700;
+}
+
+.nav-link-left span {
+  color: red;
+  font-weight: 400;
+}
+
+.nav-link-center input {
+  width: 350px;
+  height: 40px;
+  padding-left: 15px;
+  border-radius: 7px;
+  border: 1px solid #000;
+}
+
+.nav-link-right button {
+  width: 150px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 30px;
+  background: #fe5f1e;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+}
+.nav-link-rigth button i {
+  color: #fff;
+}
+
+.pizza-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 45px;
+  text-align: center;
+}
+
+.pizza-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.pizza-card h3 {
+  padding-top: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.pizza-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.pizza-card p {
+  padding: 10px 0px;
+  font-weight: 500;
+}
+
+.pizza-card button {
+  border: none;
+  background-color: #fe5f1e;
+  color: #ffd;
+  padding: 8px 25px;
+  border-radius: 7px;
+}
+
+.empty {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.modal-content img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+.modal-content h1 {
+  text-align: left;
+  cursor: pointer;
+}
+
+.modal-content button {
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.price-modal {
+  background-color: crimson;
+}
+
+.basket-add-modal {
+  background-color: #fe5f1e;
+}
+
+.basket-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
